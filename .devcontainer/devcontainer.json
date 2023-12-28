@@ -1,0 +1,15 @@
+{
+	"name": "tensorflow-test",
+	"build": {
+		"dockerfile": "Dockerfile",
+		"args": { 
+			// Uncomment this if GPU support it is required
+			"VARIANT": "latest-gpu"
+		}
+	},
+
+	"runArgs": [
+        "--gpus=all"
+	]
+
+}
